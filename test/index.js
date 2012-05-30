@@ -3,6 +3,7 @@ var assert = require('assert');
 
 var jAccess = require('./../jAccess.js');
 
+// fixture
 var obj = {
 	prop1: {
 		prop2: [1, {
@@ -11,6 +12,7 @@ var obj = {
 		}]
 	}
 };
+
 
 describe('jAccess', function () {
 
