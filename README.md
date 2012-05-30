@@ -1,6 +1,9 @@
 jAccess
 =======
 
+[![Build Status](https://secure.travis-ci.org/topliceanu/jAccess.png)](http://travis-ci.org/topliceanu/jAccess)
+
+
 small function that works like the `?.` operator in coffeescript
 
 i.e it tries to return the requested key chain from an object. If it fails, it returns _undefined_ instead of throwing an error
