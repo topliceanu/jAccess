@@ -12,7 +12,9 @@
   "scripts": {
     "test": "mocha test/index.js"
   },
-  "dependencies": {},
+  "dependencies": {
+		"mocha": "~1.0.3"
+	},
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {

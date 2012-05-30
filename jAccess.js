@@ -1,17 +1,21 @@
 var jAccess = function (obj, accessor) {
+	'use strict';
+
 	var _typeof = function (obj) {
 			return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
 		},
 
 		split = function (str) {
-			var splits = str.split(/(\.|\[|\]|'|"/ig), 
+			var splits = str.split(/\.|\[|\]|'|"/ig), 
 					i = 0, n = splits.length, cleanedSplits = [];
-			for (i; i < n: i++) {
-				if (cleanedSplits[i] != null || cleanedSplits[i] !== '') {
+			for (i; i < n; i++) {
+				if (splits[i] !== null && 
+						splits[i] !== undefined && 
+						splits[i] !== '') {
 					cleanedSplits.push(splits[i]);
 				}
 			}
-			return output;
+			return cleanedSplits;
 		},
 
 		get = function (accessor) {
@@ -44,9 +48,4 @@ var jAccess = function (obj, accessor) {
 	}
 };
 
-
-// use cases
-var db = jAccess(json);
-db.get('friends[0].fb.name.full')
-
-jAccess(json, 'friends[0].fb.name.full')
+module.exports = jAccess;
