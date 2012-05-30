@@ -1,0 +1,21 @@
+{
+  "author": "alexandru topliceanu <alexandru.topliceanu@gmail.com> (http://github.com/topliceanu)",
+  "name": "jAccess",
+  "description": "object accessor utility that works like the `?.` operator from coffeescript",
+  "version": "0.0.1",
+  "homepage": "http://github.com/topliceanu/jAccess",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/topliceanu/jAccess.git"
+  },
+  "main": "jAccess.js",
+  "scripts": {
+    "test": "mocha test/index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
